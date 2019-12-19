@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
+  public  practiceTitle = 'Angular Interpolation';
   constructor() { }
 
   ngOnInit() {
+  }
+
+  projectUrl(){
+    return  window.location.href;
   }
 
 }
