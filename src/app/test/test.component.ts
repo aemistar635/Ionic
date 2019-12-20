@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
   public  practiceTitle = 'Angular Interpolation';
+  public myId = 'testId';
+  public isDisabled = false;
   constructor() { }
 
   ngOnInit() {
