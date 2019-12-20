@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
 
 @Component({
     selector: 'app-test',
@@ -8,12 +8,21 @@ import {Component, OnInit} from '@angular/core';
 export class TestComponent implements OnInit {
 
     public practiceTitle = 'Angular Interpolation';
-    public employees= ['Zohaib', 'Aamir', 'Kamran', 'Hashir', 'M.Ali'];
+
+    @Input() public parentData;
+    @Input('parentData') public name;
+
+    @Output() public childEvent = new EventEmitter();
+
 
     constructor() {
     }
 
     ngOnInit() {
+    }
+
+    fireEvent() {
+        this.childEvent.emit('This is message sending from Child ');
     }
 
     projectUrl() {
