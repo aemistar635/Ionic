@@ -1,39 +1,8 @@
 <h1 class="heading1"> {{ 'Topic of this practice ' + practiceTitle.toUpperCase() }}</h1>
-<h3>Project Url: '{{ projectUrl()}}'</h3>
-<input type="text" value="PropertyBinding" [id]="myId"><br>
-<input type="text" disabled="false" value="Attribute">
-<input type="text" [disabled]="isDisabled" value="Property Binding3">
 
-<h2 [ngClass]="me ? meObj:otherObj">Binding Class</h2>
+<input [(ngModel)]="name" type="text" placeholder="EnterText"/>
+{{name}}
+<br>
+<br>
+<br>
 
-<br>
-<br>
-<br>
-<table class="table">
-    <tr>
-        <th colspan="5">Welcome In Angular Class</th>
-    </tr>
-    <tr>
-        <th>Sr.No</th>
-        <th colspan="2">Name</th>
-        <th colspan="2">Address</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td colspan="2">Zohaib</td>
-        <td colspan="2">Bahawalpur</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td colspan="2">Kamran</td>
-        <td colspan="2">Sakhar</td>
-    </tr><tr>
-        <td>3</td>
-        <td colspan="2">Hashir</td>
-        <td colspan="2">Rawalpindi</td>
-    </tr><tr>
-        <td>4</td>
-        <td colspan="2">M.Aamir</td>
-        <td colspan="2">Multan</td>
-    </tr>
-</table>

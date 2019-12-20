@@ -8,17 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class TestComponent implements OnInit {
 
     public practiceTitle = 'Angular Interpolation';
-    public myId = 'testId';
-    public isDisabled = false;
-    public me = true;
-
-    public meObj = {
-        'text-right': true
-    };
-    public otherObj = {
-        'text-left': true
-    }
-
+    public name="";
     constructor() {
     }
 
