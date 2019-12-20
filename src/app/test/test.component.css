@@ -5,3 +5,11 @@
     text-align: center;
     border:solid 1px black;
 }
+.text-right{
+    color:green;
+    text-align:right;
+}
+.text-left{
+    color:darkred;
+    text-align:left;
+}
