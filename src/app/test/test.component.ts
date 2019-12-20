@@ -8,7 +8,8 @@ import {Component, OnInit} from '@angular/core';
 export class TestComponent implements OnInit {
 
     public practiceTitle = 'Angular Interpolation';
-    public name="";
+    public employees= ['Zohaib', 'Aamir', 'Kamran', 'Hashir', 'M.Ali'];
+
     constructor() {
     }
 

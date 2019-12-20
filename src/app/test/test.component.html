@@ -1,7 +1,8 @@
 <h1 class="heading1"> {{ 'Topic of this practice ' + practiceTitle.toUpperCase() }}</h1>
 
-<input [(ngModel)]="name" type="text" placeholder="EnterText"/>
-{{name}}
+<div *ngFor="let employee of employees, index as i , first as f" >
+    {{f}} {{(i+1) + '  ' +   employee}}
+</div>
 <br>
 <br>
 <br>
