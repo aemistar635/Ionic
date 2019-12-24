@@ -1,9 +1,28 @@
-<h1 class="heading1"> {{ 'Topic of this practice ' + practiceTitle.toUpperCase() }}</h1>
+<h1 class="heading1"> {{ 'Topic of this practice ' + practiceTitle }}</h1>
+<br>
+<br>
+<br>
+<h2>{{name}}</h2>
+<h2>{{name | lowercase}}</h2>
+<h2>{{name | uppercase}}</h2>
+<h2>{{message | titlecase}}</h2>
+<h2>{{name | slice:2:10}}</h2>
+<h2>{{colors | json}}</h2>
 
-<h2> {{'Hello! ' + parentData}}</h2>
-<h2> {{'Hello! ' + name}}</h2>
-<button (click)="fireEvent()">Click Button</button>
-<br>
-<br>
-<br>
+<h2>{{ 6.178 | number:'1.2-3'}}</h2>
+<h2>{{ 6.178 | number:'2.2-5'}}</h2>
+<h2>{{ 6.178 | number:'4.2-2'}}</h2>
 
+<h2>{{.23 | percent}}</h2>
+
+<h2>{{1500 | currency }}</h2>
+<h2>{{1500 | currency:'PKR':'code' }}</h2>
+
+<h2>{{date}}</h2>
+<h2>{{date | date:'dd-mm-yyyy'}}</h2>
+<h2>{{date | date:'short'}}</h2>
+<h2>{{date | date:'shortDate'}}</h2>
+<h2>{{date | date:'shortTime'}}</h2>
+
+<h2>{{date | date:'mediumDate'}}</h2>
+<h2>{{date | date:'mediumTime'}}</h2>

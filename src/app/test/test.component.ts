@@ -9,20 +9,18 @@ export class TestComponent implements OnInit {
 
     public practiceTitle = 'Angular Interpolation';
 
-    @Input() public parentData;
-    @Input('parentData') public name;
+    public name = 'Appmakers';
+    public message = 'This is public message';
+    public colors = {
+        'First Name': 'Muhammad',
+        'Last Name' : 'Bin Aamir'
+    };
 
-    @Output() public childEvent = new EventEmitter();
-
-
+    public date = new Date();
     constructor() {
     }
 
     ngOnInit() {
-    }
-
-    fireEvent() {
-        this.childEvent.emit('This is message sending from Child ');
     }
 
     projectUrl() {
